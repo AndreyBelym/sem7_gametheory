@@ -1,0 +1,1144 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 14">
+<meta name=Originator content="Microsoft Word 14">
+<link rel=File-List href="neyman.files/filelist.xml">
+<link rel=Edit-Time-Data href="neyman.files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Функция полезности Неймана-Моргенштерна</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Пользователь Windows</o:Author>
+  <o:LastAuthor>Пользователь Windows</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>7</o:TotalTime>
+  <o:Created>2013-12-20T12:21:00Z</o:Created>
+  <o:LastSaved>2013-12-20T12:40:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>1503</o:Words>
+  <o:Characters>8569</o:Characters>
+  <o:Lines>71</o:Lines>
+  <o:Paragraphs>20</o:Paragraphs>
+  <o:CharactersWithSpaces>10052</o:CharactersWithSpaces>
+  <o:Version>14.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="neyman.files/themedata.thmx">
+<link rel=colorSchemeMapping href="neyman.files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>RU</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:204;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1107305727 0 0 415 0;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:204;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1073743103 0 0 415 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:204;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1073786111 1 0 415 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:204;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-520081665 -1073717157 41 0 66047 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+h2
+	{mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"Заголовок 2 Знак";
+	mso-style-next:Обычный;
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:13.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	mso-fareast-language:EN-US;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Текст выноски Знак";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-fareast-language:EN-US;}
+p.a, li.a, div.a
+	{mso-style-name:"Простой Текст";
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:1.0cm;
+	line-height:150%;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:14.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-language:ZH-CN;}
+span.a0
+	{mso-style-name:"Текст выноски Знак";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Текст выноски";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;}
+span.2
+	{mso-style-name:"Заголовок 2 Знак";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Заголовок 2";
+	mso-ansi-font-size:13.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	font-weight:bold;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:10.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 42.5pt 2.0cm 3.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:181751811;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-81747746 -632543632 68747289 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l0:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:46.35pt;
+	text-indent:-18.0pt;}
+@list l0:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:82.35pt;
+	text-indent:-18.0pt;}
+@list l0:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:118.35pt;
+	text-indent:-9.0pt;}
+@list l0:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:154.35pt;
+	text-indent:-18.0pt;}
+@list l0:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:190.35pt;
+	text-indent:-18.0pt;}
+@list l0:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:226.35pt;
+	text-indent:-9.0pt;}
+@list l0:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:262.35pt;
+	text-indent:-18.0pt;}
+@list l0:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:298.35pt;
+	text-indent:-18.0pt;}
+@list l0:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:334.35pt;
+	text-indent:-9.0pt;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Обычная таблица";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin-top:0cm;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:10.0pt;
+	mso-para-margin-left:0cm;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-fareast-language:EN-US;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=RU style='tab-interval:35.4pt'>
+
+<div class=WordSection1>
+
+<h2 align=center style='text-align:center'>Функция относительной полезности
+Неймана-Моргенштерна</h2>
+
+<p class=a><span style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
+
+<p class=a><span style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>Обоснование
+выбора решения обычно выполняется с позиций объективиста. Если же ЛПР— <span
+class=GramE>су</span>бъективист, то он будет руководствоваться<span
+style='mso-spacerun:yes'>  </span>индивидуально определенным безусловным<span
+style='mso-spacerun:yes'>  </span>денежным<span style='mso-spacerun:yes'> 
+</span>эквивалентом (БДЭ). Поясним смысл этой величины. Рассмотрим ситуацию,
+когда игрок с вероятностью 0,8 <span class=SpellE>выиг-рывает</span> 40 дол<span
+class=GramE>.</span> <span class=GramE>и</span> с вероятностью 0,2 проигрывает
+20 дол. Попробуем выяснить, за какую сумму ЛПР уступит свое право участвовать в
+игре. Объективист считает безусловный<span style='mso-spacerun:yes'> 
+</span>денежный<span style='mso-spacerun:yes'>  </span>эквивалент равным ожидаемой<span
+style='mso-spacerun:yes'>  </span>денежной оценке (ОДО) и поэтому<span
+style='mso-spacerun:yes'>  </span>пользуется<span style='mso-spacerun:yes'> 
+</span>правилом:<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=a align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>БДЭ</span></b><span
+style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>=<b
+style='mso-bidi-font-weight:normal'>ОДО</b>=0,8*40 + 0,2(-20)=28 дол.<o:p></o:p></span></p>
+
+<p class=a><span style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>Поэтому свое
+право на игру он уступит не менее чем за 28 дол. Субъективист, как правило,
+готов уступить свое право на игру за меньшую сумму, поскольку для него
+БДЭ&lt;ОДО. Причинами такого поведения могут быть: <o:p></o:p></span></p>
+
+<p class=a><span style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>• финансовое
+состояние игрок<span class=GramE>а(</span>возможно, он на грани банкротства и
+ему необходимы денежные средства); <o:p></o:p></span></p>
+
+<p class=a><span style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>• отношение
+игрока к риску вообщ<span class=GramE>е(</span>склонность к риску); <o:p></o:p></span></p>
+
+<p class=a><span style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>• настроение
+или состояние здоровья игрока; <o:p></o:p></span></p>
+
+<p class=a><span style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>• множество
+других, даже непосредственно не относящихся к бизнесу причин. <o:p></o:p></span></p>
+
+<p class=a><span style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>Величина<span
+style='mso-spacerun:yes'>  </span>БДЭ<span style='mso-spacerun:yes'> 
+</span>может<span style='mso-spacerun:yes'>  </span>изменяться со временем в
+зависимости от обусловленных указанными причинами обстоятельств. Например, в
+случае катастрофической нехватки финансовых<span style='mso-spacerun:yes'> 
+</span>средст<span class=GramE>в(</span>наличных денег)<span
+style='mso-spacerun:yes'>  </span>право на игру можно уступить и за более
+низкий эквивалент. <o:p></o:p></span></p>
+
+<p class=a><span style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>Исследуем
+реалистичность критерия выбора решения, основанного на расчете ОДО. Рассмотрим
+две альтернативы: <o:p></o:p></span></p>
+
+<p class=a><span style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>1) выигрыш 1
+000 000 дол<span class=GramE>.</span> <span class=GramE>с</span> вероятностью
+1; <o:p></o:p></span></p>
+
+<p class=a><span style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>2) игра
+(лотерея):<span style='mso-spacerun:yes'>  </span>выигрыш 2 100 000 дол<span
+class=GramE>.</span> <span class=GramE>с</span> вероятностью 0,5 и проигрыш <o:p></o:p></span></p>
+
+<p class=a style='text-indent:0cm'><span style='font-size:12.0pt;line-height:
+150%;font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin'>50 000 дол<span class=GramE>.</span> <span
+class=GramE>с</span> вероятностью 0,5. В этом случае<o:p></o:p></span></p>
+
+<p class=a align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>ОДО</span></b><span
+style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>= 0,5* 2 100
+000 - 0,5* 50 000 = 1 025 000 дол.<o:p></o:p></span></p>
+
+<p class=a><span style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>Относительно
+получаемого среднего выигрыша указанные альтернативы практически эквивалентны,
+и, если игрок безразличен к риску, он выберет вторую альтернативу. Если он к
+риску небезразличен, а подавляющее число людей именно таковыми являются,<span
+style='mso-spacerun:yes'>  </span>то выбор будет зависеть<span
+style='mso-spacerun:yes'>  </span>главным<span style='mso-spacerun:yes'> 
+</span>образом<span style='mso-spacerun:yes'>  </span>от<span
+style='mso-spacerun:yes'>  </span>финансового<span style='mso-spacerun:yes'> 
+</span>состояния<span style='mso-spacerun:yes'>  </span>игрока.<span
+style='mso-spacerun:yes'>  </span>Игроки, имеющие скромный денежный доход,
+предпочтут не рисковать и выберут<span style='mso-spacerun:yes'> 
+</span>гарантированный<span style='mso-spacerun:yes'>  </span>выигрыш.<span
+style='mso-spacerun:yes'>  </span>Для<span style='mso-spacerun:yes'> 
+</span>ЛПР,<span style='mso-spacerun:yes'>  </span>обладающего <span
+style='mso-spacerun:yes'> </span>достаточно крупным капиталом, проигрыш в 50
+000 дол<span class=GramE>.</span> <span class=GramE>н</span>евелик, и он
+предпочтет рискнуть. Рисковать будут также игроки, патологически склонные к <span
+class=GramE>фи-<span class=SpellE>нансовым</span></span> авантюрам. <o:p></o:p></span></p>
+
+<p class=a><span style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>Итак, далее
+рассматриваются<span style='mso-spacerun:yes'>  </span>основы<span
+style='mso-spacerun:yes'>  </span>математической<span
+style='mso-spacerun:yes'>  </span>теории принятия<span
+style='mso-spacerun:yes'>  </span>субъективных<span style='mso-spacerun:yes'> 
+</span>решений.<span style='mso-spacerun:yes'>  </span>Методология<span
+style='mso-spacerun:yes'>  </span>рационального принятия решений в условиях
+неопределенности, основанная на функции полезности индивида, опирается на пять
+аксиом, которые отражают минимальный набор необходимых условий
+непротиворечивого и рационального поведения игрока. Для компактного изложения
+аксиом потребуется следующее определение: <o:p></o:p></span></p>
+
+<p class=a><span style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>Предположим,
+что конструируется игра, в которой индивид с вероятностью <i style='mso-bidi-font-style:
+normal'>&#945;</i> получает денежную сумму <i style='mso-bidi-font-style:normal'>x</i><span
+style='mso-spacerun:yes'>  </span>и с вероятностью (1-<i style='mso-bidi-font-style:
+normal'>&#945;</i>) — сумму <i style='mso-bidi-font-style:normal'>z</i>. Эту
+ситуацию будем обозначать G(<span class=SpellE><i style='mso-bidi-font-style:
+normal'>x</i>,<i style='mso-bidi-font-style:normal'>z</i></span>:<i
+style='mso-bidi-font-style:normal'>&#945;</i>). <o:p></o:p></span></p>
+
+<p class=a><i style='mso-bidi-font-style:normal'><span style='font-size:12.0pt;
+line-height:150%;font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin'>Аксиома 1</span></i><span style='font-size:
+12.0pt;line-height:150%;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
+minor-latin;mso-hansi-theme-font:minor-latin'>. Аксиома сравнимости (полноты).
+Для всего множества <i style='mso-bidi-font-style:normal'>S </i>неопределенных
+альтернати<span class=GramE>в(</span>возможных исходов) индивид может сказать,
+что либо исход х предпочтительнее исхода y (<span class=SpellE>х<span
+style='font-family:"Cambria Math","serif";mso-bidi-font-family:"Cambria Math"'>&#8827;</span>y</span>),
+либо <span class=SpellE>y<span style='font-family:"Cambria Math","serif";
+mso-bidi-font-family:"Cambria Math"'>&#8827;</span>х</span>, либо индивид
+безразличен в отношении к выбору между х и y(<span class=SpellE>x<span
+style='font-family:"Cambria Math","serif";mso-bidi-font-family:"Cambria Math"'>&#8829;</span>y</span>).<span
+style='mso-spacerun:yes'>  </span>Запись <span class=SpellE>x<span
+style='font-family:"Cambria Math","serif";mso-bidi-font-family:"Cambria Math"'>&#8829;</span>y</span>
+означает,<span style='mso-spacerun:yes'>  </span>что исход x предпочтительнее
+исхода <span class=GramE>у</span> либо индивид безразличен в отношении к выбору
+между х и y. <o:p></o:p></span></p>
+
+<p class=a><i style='mso-bidi-font-style:normal'><span style='font-size:12.0pt;
+line-height:150%;font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin'>Аксиома 2</span></i><span style='font-size:
+12.0pt;line-height:150%;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
+minor-latin;mso-hansi-theme-font:minor-latin'>. Аксиома транзитивност<span
+class=GramE>и(</span>состоятельности). Если <span class=SpellE>x<span
+style='font-family:"Cambria Math","serif";mso-bidi-font-family:"Cambria Math"'>&#8827;</span>y</span>
+и <span class=SpellE>y<span style='font-family:"Cambria Math","serif";
+mso-bidi-font-family:"Cambria Math"'>&#8827;</span>z</span>, то <span
+class=SpellE>x<span style='font-family:"Cambria Math","serif";mso-bidi-font-family:
+"Cambria Math"'>&#8827;</span>z</span>. Если <span class=SpellE>x<span
+style='font-family:"Cambria Math","serif";mso-bidi-font-family:"Cambria Math"'>&#8829;</span>y</span>
+и <span class=SpellE>y<span style='font-family:"Cambria Math","serif";
+mso-bidi-font-family:"Cambria Math"'>&#8829;</span>z</span>, то <span
+class=SpellE>x<span style='font-family:"Cambria Math","serif";mso-bidi-font-family:
+"Cambria Math"'>&#8829;</span>z</span>. <o:p></o:p></span></p>
+
+<p class=a><i style='mso-bidi-font-style:normal'><span style='font-size:12.0pt;
+line-height:150%;font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin'>Аксиома 3</span></i><span style='font-size:
+12.0pt;line-height:150%;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
+minor-latin;mso-hansi-theme-font:minor-latin'>. Аксиома сильной независимости.
+Предположим, что мы конструируем игру, в которой индивид с вероятностью <i
+style='mso-bidi-font-style:normal'>&#945;</i><span style='mso-spacerun:yes'> 
+</span>получает денежную сумму <i style='mso-bidi-font-style:normal'>x</i> и с
+вероятностью(1- <i style='mso-bidi-font-style:normal'>&#945;</i>) — сумму <i
+style='mso-bidi-font-style:normal'>z</i>, т.е. G(<span class=SpellE><i
+style='mso-bidi-font-style:normal'>x</i>,<i style='mso-bidi-font-style:normal'>z</i></span>:
+<i style='mso-bidi-font-style:normal'>&#945;</i>). <o:p></o:p></span></p>
+
+<p class=a><span style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>Сильная
+независимость означает, что если индивид безразличен в отношении к выбору между
+<i style='mso-bidi-font-style:normal'>x</i> и <i style='mso-bidi-font-style:
+normal'>y</i>(<span class=SpellE><i style='mso-bidi-font-style:normal'>x</i>&#8776;<i
+style='mso-bidi-font-style:normal'>y</i></span>), то он также будет безразличен
+в отношении к выбору между игро<span class=GramE>й(</span>лотереей) G(<span
+class=SpellE><i style='mso-bidi-font-style:normal'>x</i>,<i style='mso-bidi-font-style:
+normal'>z</i></span>: <i style='mso-bidi-font-style:normal'>&#945;</i>) и игрой
+G(<i style='mso-bidi-font-style:normal'>y</i>, <i style='mso-bidi-font-style:
+normal'>z</i>:<i style='mso-bidi-font-style:normal'>&#945;</i>), т.е. из <span
+class=SpellE><i style='mso-bidi-font-style:normal'>x</i>&#8776;<i
+style='mso-bidi-font-style:normal'>y</i></span> следует <o:p></o:p></span></p>
+
+<p class=a style='text-indent:0cm'><span style='font-size:12.0pt;line-height:
+150%;font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin'>G(<i style='mso-bidi-font-style:normal'>x</i>,
+<i style='mso-bidi-font-style:normal'>z</i>: <i style='mso-bidi-font-style:
+normal'>&#945;</i>) &#8776;G(<i style='mso-bidi-font-style:normal'>y</i>, <i
+style='mso-bidi-font-style:normal'>z</i>: <i style='mso-bidi-font-style:normal'>&#945;</i>).
+<o:p></o:p></span></p>
+
+<p class=a><i style='mso-bidi-font-style:normal'><span style='font-size:12.0pt;
+line-height:150%;font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin'>Аксиома 4</span></i><span style='font-size:
+12.0pt;line-height:150%;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
+minor-latin;mso-hansi-theme-font:minor-latin'>. Аксиома измеримости. Если <span
+class=SpellE>х<span style='font-family:"Cambria Math","serif";mso-bidi-font-family:
+"Cambria Math"'>&#8829;</span>y&#8776;z</span> или <span class=SpellE>х&#8776;y<span
+style='font-family:"Cambria Math","serif";mso-bidi-font-family:"Cambria Math"'>&#8829;</span>z</span>,
+то существует единственная вероятность <i style='mso-bidi-font-style:normal'>&#945;</i>
+такая, что <span class=SpellE><i style='mso-bidi-font-style:normal'>y</i>&#8776;G</span>(<i
+style='mso-bidi-font-style:normal'>x</i>, <i style='mso-bidi-font-style:normal'>z</i>:
+<i style='mso-bidi-font-style:normal'>&#945;</i>). <o:p></o:p></span></p>
+
+<p class=a><span style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>Поясним
+смысл этой аксиомы. Пусть, например, имеем три исхода: <i style='mso-bidi-font-style:
+normal'>x</i>=1000; <i style='mso-bidi-font-style:normal'>y</i> = 0; z означает
+смерть игрока. <span class=GramE>Исходя из здравого смысла смерть нельзя
+сравнивать</span> ни с каким выигрышем, и соответствующего этому исходу
+значения вероятности <i style='mso-bidi-font-style:normal'>&#945;</i>
+существовать не может. Однако в жизни бывают ситуации, когда некий проигрыш
+равнозначен смерти. Тогда утверждение <span class=SpellE><i style='mso-bidi-font-style:
+normal'>y</i>&#8776;G</span>(<span class=SpellE><i style='mso-bidi-font-style:
+normal'>x</i>,<i style='mso-bidi-font-style:normal'>z</i></span>:<i
+style='mso-bidi-font-style:normal'>&#945;</i>) можно считать справедливым для
+некоторого значения 0 &#8804; <i style='mso-bidi-font-style:normal'>&#945;</i>
+&#8804;1 . <o:p></o:p></span></p>
+
+<p class=a><i style='mso-bidi-font-style:normal'><span style='font-size:12.0pt;
+line-height:150%;font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin'>Аксиома 5</span></i><span style='font-size:
+12.0pt;line-height:150%;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
+minor-latin;mso-hansi-theme-font:minor-latin'>. Аксиома ранжирования. Если
+альтернативы <i style='mso-bidi-font-style:normal'>y</i> и <i style='mso-bidi-font-style:
+normal'>u</i> находятся по предпочтительности между альтернативами <i
+style='mso-bidi-font-style:normal'>x</i> и <i style='mso-bidi-font-style:normal'>z</i>
+и можно построить игры такие,<span style='mso-spacerun:yes'>  </span>что
+индивид безразличен в отношении к выбору между <i style='mso-bidi-font-style:
+normal'>y</i> и G(<i style='mso-bidi-font-style:normal'>x</i>, <i
+style='mso-bidi-font-style:normal'>z</i>: <i style='mso-bidi-font-style:normal'>&#945;<sub>1</sub></i>),
+а также к выбору между <i style='mso-bidi-font-style:normal'>u</i> и G(<i
+style='mso-bidi-font-style:normal'>x</i>, <i style='mso-bidi-font-style:normal'>z</i>:<i
+style='mso-bidi-font-style:normal'>&#945;<sub>2</sub></i>), то при<span
+style='mso-spacerun:yes'>  </span><i style='mso-bidi-font-style:normal'>&#945;<sub>1</sub></i>
+&gt; <i style='mso-bidi-font-style:normal'>&#945;<sub>2</sub></i><span
+style='mso-spacerun:yes'>  </span><span class=SpellE><i style='mso-bidi-font-style:
+normal'>y</i><span style='font-family:"Cambria Math","serif";mso-bidi-font-family:
+"Cambria Math"'>&#8829;</span><i style='mso-bidi-font-style:normal'>u</i></span>.
+<o:p></o:p></span></p>
+
+<p class=a><span style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>Поясним
+смысл этой аксиомы. Пусть существуют следующие альтернативы: <i
+style='mso-bidi-font-style:normal'>x</i> = 1000; <i style='mso-bidi-font-style:
+normal'>y</i> = 500; <i style='mso-bidi-font-style:normal'>u</i> = 200, <i
+style='mso-bidi-font-style:normal'>z</i> = - 10. Пусть эквивалентны две пары
+ситуаций, одна из которых неигровая, а другая игровая: <o:p></o:p></span></p>
+
+<p class=a style='margin-left:0cm;mso-list:l0 level1 lfo1'><![if !supportLists]><span
+style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:Calibri;mso-fareast-theme-font:
+minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'><span style='mso-list:Ignore'>1)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;line-height:150%;
+font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
+minor-latin'>гарантированно получить 500 или игра: с вероятностью <i
+style='mso-bidi-font-style:normal'>&#945;<sub>1</sub></i><sub> </sub>выиграть
+1000 и с вероятностью (1-<i style='mso-bidi-font-style:normal'>&#945;<sub>1</sub></i>)
+проиграть 10, т.е. 500&#8776;G(1000,-10: <i style='mso-bidi-font-style:normal'>&#945;<sub>1</sub></i>);
+<o:p></o:p></span></p>
+
+<p class=a style='margin-left:0cm;mso-list:l0 level1 lfo1'><![if !supportLists]><span
+style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:Calibri;mso-fareast-theme-font:
+minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin'><span style='mso-list:Ignore'>2)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;line-height:150%;
+font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
+minor-latin'>гарантированно получить 200 или игра: с вероятностью <i
+style='mso-bidi-font-style:normal'>&#945;<sub>2</sub></i> выиграть1000 и с
+вероятностью(1-<i style='mso-bidi-font-style:normal'>&#945;<sub>2</sub></i>)
+проиграть 10, т.е. 200&#8776;G(1000,-10: <i style='mso-bidi-font-style:normal'>&#945;<sub>2</sub></i>).
+<o:p></o:p></span></p>
+
+<p class=a><span style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>Очевидно,
+что при указанных условиях <i style='mso-bidi-font-style:normal'>&#945;<sub>1</sub></i>&gt;<i
+style='mso-bidi-font-style:normal'>&#945;<sub>2</sub></i>. Если <i
+style='mso-bidi-font-style:normal'>&#945;<sub>1</sub></i>=<i style='mso-bidi-font-style:
+normal'>&#945;<sub>2</sub></i>, то <span class=SpellE><i style='mso-bidi-font-style:
+normal'>y</i><span style='font-family:"Cambria Math","serif";mso-bidi-font-family:
+"Cambria Math"'>&#8829;</span><i style='mso-bidi-font-style:normal'>u</i></span>.
+<o:p></o:p></span></p>
+
+<p class=a><span style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>Утверждение
+аксиомы вполне соответствует здравому смыслу: чем больше вероятность крупного
+выигрыша, тем больше игра &quot;стоит&quot;, т.е. тем большая плата потребуется
+за приобретение права участвовать в этой игре. <o:p></o:p></span></p>
+
+<p class=a><span style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>Если<span
+style='mso-spacerun:yes'>  </span>принять<span style='mso-spacerun:yes'> 
+</span>приведенные<span style='mso-spacerun:yes'>  </span>аксиомы<span
+style='mso-spacerun:yes'>  </span>и<span style='mso-spacerun:yes'> 
+</span>предположить,<span style='mso-spacerun:yes'>  </span>что<span
+style='mso-spacerun:yes'>  </span>люди предпочитают большее количество некоторого
+блага меньшему, то все это в совокупности определяет рациональное поведение
+ЛПР. <o:p></o:p></span></p>
+
+<p class=a><span style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>При<span
+style='mso-spacerun:yes'>  </span>названных<span style='mso-spacerun:yes'> 
+</span>предположениях<span style='mso-spacerun:yes'>  </span>американскими<span
+style='mso-spacerun:yes'>  </span>учеными Дж. Нейманом и О. Моргенштерном было
+показано, что ЛПР при принятии решения будет стремиться<span
+style='mso-spacerun:yes'>  </span>к<span style='mso-spacerun:yes'> 
+</span>максимизации<span style='mso-spacerun:yes'>  </span>ожидаемой
+полезности. Другими словами, из всех возможных решений он выберет то, которое
+обеспечивает наибольшую ожидаемую полезность. Сформулируем определение
+полезности по Нейману—Моргенштерну. <o:p></o:p></span></p>
+
+<p class=a><span style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>Полезность —
+это некоторое число, приписываемое<span style='mso-spacerun:yes'> 
+</span>лицом,<span style='mso-spacerun:yes'>  </span>принимающим<span
+style='mso-spacerun:yes'>  </span>решение,<span style='mso-spacerun:yes'> 
+</span>каждому<span style='mso-spacerun:yes'>  </span>возможному<span
+style='mso-spacerun:yes'>  </span>исходу. <o:p></o:p></span></p>
+
+<p class=a><span style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>Функция
+полезности Неймана— <span class=GramE>Мо</span>ргенштерна для ЛПР показывает
+полезность, которую он приписывает каждому возможному исходу. У каждого ЛПР
+своя функция полезности, которая показывает его предпочтение к тем или иным
+исходам в зависимости от его отношения к риску. <o:p></o:p></span></p>
+
+<p class=a><span style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>Ожидаемая
+полезность события равна сумме произведений вероятностей исходов на значения
+полезностей этих исходов. <o:p></o:p></span></p>
+
+<p class=a><span style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>Проиллюстрируем<span
+style='mso-spacerun:yes'>  </span>практическую<span style='mso-spacerun:yes'> 
+</span>реализацию<span style='mso-spacerun:yes'>  </span>введенных<span
+style='mso-spacerun:yes'>  </span>понятий на примере расчета ОДО и
+сопоставления этого значения с полезностью. <o:p></o:p></span></p>
+
+<p class=a><span style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>Нефтеперерабатывающая
+фирма решает вопрос о бурении скважины. Известно, что если фирма будет бурить,
+то с вероятностью 0,6 нефти найдено не будет; с вероятностью 0,1 запасы
+месторождения составят 50 000 т; с вероятностью 0,15 — 100 000 т; с
+вероятностью 0,1 — 500 000 т; <span class=GramE>с вероятностью 0,05 — 1 000 000
+т. Если нефть не будет найдена, то фирма потеряет 50 000 дол.; если мощность
+месторождения составит 50 000 т, то потери снизятся до 20 000 дол.; мощность
+месторождения в 100 000 т принесет прибыль 30 000 дол.; 500 000 т — 430 000
+дол.; 1 000 000 т — 930 000 дол. </span><o:p></o:p></span></p>
+
+<p class=a><span style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>Нетрудно
+рассчитать ожидаемое значение выигрыша: <o:p></o:p></span></p>
+
+<p class=a align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>ОДО</span></b><span
+style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'> = 0,6(-50
+000) + 0,1(-20 000) + 0,15*30 000 +0,1*430 000 +<o:p></o:p></span></p>
+
+<p class=a align=center style='text-align:center'><span style='font-size:12.0pt;
+line-height:150%;font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin'>0,05*930 000 = 62 000 дол.<o:p></o:p></span></p>
+
+<p class=a><span class=GramE><span style='font-size:12.0pt;line-height:150%;
+font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
+minor-latin'>Если ЛПР, представляющий фирму, безразличен к риску и принимает
+решение о проведении буровых работ на основании рассчитанного ОДО, то он
+воспринимает ожидаемую полезность как пропорциональную ОДО, полагая <i
+style='mso-bidi-font-style:normal'>U</i> = 62.</span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'> Учитывая,
+что <i style='mso-bidi-font-style:normal'>U</i> — индивидуальное число, характеризующее
+ЛПР, нули, отвечающие расчету ОДО, можно отбросить. В этом случае функция
+полезности <i style='mso-bidi-font-style:normal'>U</i>(<i style='mso-bidi-font-style:
+normal'>v</i>), где <i style='mso-bidi-font-style:normal'>v</i>— прибыль,
+получаемая при различных исходах, является прямой <span class=GramE>с</span>
+положительным на-клоном. <o:p></o:p></span></p>
+
+<p class=a><span style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>Для
+принятия<span style='mso-spacerun:yes'>  </span>решения в случае <span
+class=SpellE>небезразличия</span> ЛПР к риску необходимо уметь оценивать
+значения полезности каждого из<span style='mso-spacerun:yes'> 
+</span>допустимых исходов.<span style='mso-spacerun:yes'>  </span>Дж.<span
+style='mso-spacerun:yes'>  </span>Нейман<span style='mso-spacerun:yes'> 
+</span>и<span style='mso-spacerun:yes'>  </span>О.<span
+style='mso-spacerun:yes'>  </span>Моргенштерн<span style='mso-spacerun:yes'> 
+</span>предложили<span style='mso-spacerun:yes'>  </span>процедуру<span
+style='mso-spacerun:yes'>  </span>построения индивидуальной функции полезности,
+котора<span class=GramE>я(</span>процедура) заключается в следующем: <o:p></o:p></span></p>
+
+<p class=a><span style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>ЛПР отвечает
+на ряд вопросов, обнаруживая при этом свои индивидуальные предпочтения,
+учитывающие его отношение к риску. Значения полезностей могут быть найдены за
+два шага. <o:p></o:p></span></p>
+
+<p class=a><i style='mso-bidi-font-style:normal'><span style='font-size:12.0pt;
+line-height:150%;font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin'>Шаг 1</span></i><span style='font-size:12.0pt;
+line-height:150%;font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin'>. Присваиваются произвольные значения
+полезностей выигрышам для худшего и лучшего исходов, причем первой величин<span
+class=GramE>е(</span>худший исход) ставится в соответствие меньшее число.
+Например, для приведенной выше задачи <i style='mso-bidi-font-style:normal'>U</i>(-50
+000 дол.)=0, a <i style='mso-bidi-font-style:normal'>U</i>(930 000 дол.)=50.
+Тогда полезности промежуточных выигрышей будут находиться в интервале от 0 до
+50. Полезность исхода даже для одного индивида определяется не однозначно, а с
+точностью до монотонного преобразования. <o:p></o:p></span></p>
+
+<p class=a><i style='mso-bidi-font-style:normal'><span style='font-size:12.0pt;
+line-height:150%;font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin'>Шаг 2</span></i><span style='font-size:12.0pt;
+line-height:150%;font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin'>. Игроку предлагается на выбор: получить
+некоторую гарантированную денежную сумму v, находящуюся между лучшим и худшим
+значениями <i style='mso-bidi-font-style:normal'>S</i> и <i style='mso-bidi-font-style:
+normal'>s</i>, либо принять участие в игре, т.е. получить с вероятностью <i
+style='mso-bidi-font-style:normal'>p</i> наибольшую денежную сумму <i
+style='mso-bidi-font-style:normal'>S</i> и с вероятностью (1-<i
+style='mso-bidi-font-style:normal'>p</i>) — наименьшую сумму <i
+style='mso-bidi-font-style:normal'>s</i>. При этом вероятность следует изменять
+(понижать или повышать) до тех пор, пока ЛПР станет безразличным в отношении к
+выбору между получением гарантированной суммы и игрой. Пусть указанное значение
+вероятности равно <i style='mso-bidi-font-style:normal'>p</i> . Тогда
+полезность гарантированной суммы определяется как среднее значени<span
+class=GramE>е(</span>математическое ожидание) полезностей наименьшей и
+наибольшей сумм, т.е. <o:p></o:p></span></p>
+
+<p class=a align=center style='text-align:center'><span style='font-size:12.0pt;
+line-height:150%;font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin;mso-fareast-language:RU;mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="Рисунок_x0020_1" o:spid="_x0000_i1025" type="#_x0000_t75"
+ style='width:194.25pt;height:23.25pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="neyman.files/image001.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=259 height=31
+src="neyman.files/image002.jpg" v:shapes="Рисунок_x0020_1"><![endif]></span><span
+style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'><o:p></o:p></span></p>
+
+<p class=a><span style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>Рассчитаем
+полезность<span style='mso-spacerun:yes'>  </span>результатов любого из
+возможных исходов. Пусть для ЛПР безразлично: потерять 20 000 дол<span
+class=GramE>.</span> <span class=GramE>и</span>ли принять участие в игре
+(выигрыш 930 000 дол. с вероятностью 0,1 или проигрыш 50 000 дол. с
+вероятностью 0,9). Согласно формуле имеем: <o:p></o:p></span></p>
+
+<p class=a align=center style='text-align:center'><i style='mso-bidi-font-style:
+normal'><span style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>U</span></i><span
+style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>(-20) = 0,1<i
+style='mso-bidi-font-style:normal'>U</i>(930) + 0,9<i style='mso-bidi-font-style:
+normal'>U</i>(-50) = 5,<o:p></o:p></span></p>
+
+<p class=a><span style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>при этом по определению
+принято, что U(-50) = 0, U(930) = 50, откуда следует, что U(-20) = 5. <o:p></o:p></span></p>
+
+<p class=a><span style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>Таким
+образом, если определена шкала измерения, то может быть построена функция
+полезности ЛПР. <o:p></o:p></span></p>
+
+<p class=a><span style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'>В общем
+случае график функции полезности может быть трех типов<o:p></o:p></span></p>
+
+<p class=a><span class=GramE><span style='font-size:12.0pt;line-height:150%;
+font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
+minor-latin'>• для ЛПР, не склонного к риску, — строго вогнутая функция, у
+которой каждая дуга кривой лежит выше своей хорды; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'><o:p></o:p></span></p>
+
+<p class=a><span class=GramE><span style='font-size:12.0pt;line-height:150%;
+font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
+minor-latin'>• для ЛПР, безразличного к риску,— прямая линия; </span></span><span
+style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif";
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'><o:p></o:p></span></p>
+
+<p class=a><span class=GramE><span style='font-size:12.0pt;line-height:150%;
+font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
+minor-latin'>• для ЛПР, склонного к риску,— строго выпуклая функция, у которой
+каждая дуга кривой лежит ниже своей хорды.</span></span><span style='font-size:
+12.0pt;line-height:150%;font-family:"Calibri","sans-serif";mso-ascii-theme-font:
+minor-latin;mso-hansi-theme-font:minor-latin'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:11.0pt;
+line-height:115%'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

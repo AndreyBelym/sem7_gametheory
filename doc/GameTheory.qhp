@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+ <QtHelpProject version="1.0">
+     <namespace>mycompany.com.myapplication</namespace>
+     <virtualFolder>doc</virtualFolder>
+     <filterSection>
+         <toc>
+             <section title="Добро пожаловать!" ref="./index.htm">
+				<section title="Стратегические игры" ref="strategy.htm"/>
+				<section title="Игры с природой" ref="nature.htm"/>
+				<section title="Функция полезности" ref="neyman.htm"/>
+			 </section>
+         </toc>
+         <files>
+             <file>index.htm</file>
+			 <file>index_files/*</file>
+			 <file>neyman.htm</file>
+			 <file>neyman.files/*</file>
+			 <file>nature.htm</file>
+			 <file>nature.files/*</file>
+			 <file>strategy.htm</file>
+			 <file>strategy.files/*</file>
+         </files>
+     </filterSection>
+ </QtHelpProject>

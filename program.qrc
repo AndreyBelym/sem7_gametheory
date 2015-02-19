@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>list-add.png</file>
+        <file>list-remove.png</file>
+        <file>text-editor.png</file>
+        <file>arsen.png</file>
+        <file>WP_20131220_001.png</file>
+    </qresource>
+</RCC>

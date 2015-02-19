@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ <QHelpCollectionProject version="1.0">
+     <assistant>
+		 <enableFilterFunctionality>false</enableFilterFunctionality>
+		 <startPage>qthelp://mycompany.com.myapplication/doc/index.htm</startPage>
+	 </assistant>
+	 <docFiles>
+     <generate>
+         <file>
+             <input>GameTheory.qhp</input>
+             <output>GameTheory.qch</output>
+         </file>
+     </generate>
+     <register>
+         <file>GameTheory.qch</file>
+     </register>
+	</docFiles>
+ </QHelpCollectionProject>
